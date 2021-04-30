@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header class="navbar navbar-inverse">
+      <div>
+        <%= link_to "Contact", root_path, id: "logo", class:"navbar-brand" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Recommendations", help_path %></li>
+            <li><%= link_to "Log In", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
