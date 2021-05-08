@@ -1,5 +1,12 @@
 class RecommendationsController < ApplicationController
   before_action :set_recommendation, only: %i[ show edit update destroy ]
+  before_action :authenticate
+
+  def authenticate
+    if not session[:user_id]
+      redirect_to '/'
+    end
+  end
 
   # GET /reccomendations or /reccomendations.json
   def index
