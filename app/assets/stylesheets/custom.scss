@@ -188,6 +188,42 @@ textarea {
   color: $maroon;
 }
 
+.recommendation {
+    text-align: left;
+
+    background-color: white;
+    color: black;
+
+    box-shadow: none;
+    border-radius: 10px;
+    border-color: #333;
+
+    margin-top: 30px;
+}
+
+.recommendation > .card-header {
+    color: $maroon;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+.recommendation > .card-header > h3 {
+    font-weight: 600;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+
+    border-bottom: 5px solid $cream;
+}
+
+.recommendation > .card-header > h5 {
+    margin-left: 10px;
+
+    color: #333;
+}
+
 /* Contact Page */
 
 .cream {
