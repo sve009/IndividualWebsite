@@ -1,7 +1,7 @@
 <% provide(:title, "Recommendations") %>
 <div class="center container">
   <h1 id=reccos>Recommendations</h1>
-  <h4 class="text-muted">I do things sometimes, here are some things I've enjoyed</h4>
+  <h4 class="text-muted" id="subheader">I do things sometimes, here are some things I've enjoyed</h4>
   <div class="row">
     <% @recommendations = Recommendation.all %>
     <% @recommendations.each() do |recommendation| %>

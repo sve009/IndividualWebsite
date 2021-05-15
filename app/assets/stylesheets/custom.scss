@@ -146,6 +146,10 @@ textarea {
   background-color: $maroon;
 }
 
+.card a:hover {
+    color: #bbb;
+}
+
 /* About me */
 
 .inverse {
@@ -183,9 +187,16 @@ textarea {
 /* Recommendation Page */
 
 #reccos {
+  margin-top: 60px;
+
   font-size: 80px;
   font-weight: 900;
+
   color: $maroon;
+}
+
+#subheader {
+    margin-bottom: 40px;
 }
 
 .recommendation {
@@ -208,7 +219,7 @@ textarea {
 }
 
 .recommendation > .card-header > h3 {
-    font-weight: 600;
+    font-weight: 700;
 
     margin-left: 10px;
     margin-right: 10px;
@@ -220,8 +231,18 @@ textarea {
 
 .recommendation > .card-header > h5 {
     margin-left: 10px;
+    margin-right: 10px;
 
-    color: #333;
+    font-weight: 700;
+    color: $maroon;
+}
+
+.recommendation > .card-header > h5 > span {
+    width: 50%;
+    float: right;
+
+    font-weight: 400;
+    color: #777777;
 }
 
 /* Contact Page */
@@ -280,12 +301,15 @@ textarea {
   color: #333;
 }
 
+
+
 /* Footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
   padding-left: 1%;
+  margin-right: 1%;
   border-top: 1px solid #eaeaea;
   color: #333;
 }

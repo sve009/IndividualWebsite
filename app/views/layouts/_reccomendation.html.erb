@@ -2,8 +2,8 @@
   <div class="recommendation card">
     <div class="card-header">
       <h3><%= @recommendation.title %></h1>
-      <h5><%= @recommendation.creator %></h4>
-      <h5><%= @recommendation.media %></h4>
+      <h5>By: <span><%= @recommendation.creator %></span></h4>
+      <h5>Medium: <span><%= @recommendation.media %></span></h4>
     </div>
     <div class="card-body">
       <p><%= @recommendation.description %></p>

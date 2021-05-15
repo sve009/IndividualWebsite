@@ -1,3 +1,28 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* Log in */
+
+.log-in {
+    margin-top: 40px;
+}
+
+#log-form label {
+    font-weight: 700;
+    font-size: 26px;
+
+    color: #333;
+}
+
+#log-form input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#log-form .btn {
+    margin-left: 45%;
+    margin-right: 45%;
+    
+    width: 10%;
+}
