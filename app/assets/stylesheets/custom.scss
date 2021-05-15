@@ -114,6 +114,8 @@ textarea {
 .card {
   border: 1px solid black;
   box-shadow: 0px 2px #333;
+
+  margin-bottom: 30px;
 }
 
 .card-header {
@@ -205,6 +207,15 @@ textarea {
 
     text-align: center;
 }
+
+@media(max-width: 1199px) {
+    #harry {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
 
 /* Recommendation Page */
 
